@@ -23,8 +23,7 @@
   "founder": {
     "@type": "Person",
     "name": "David O'Neill",
-    "jobTitle": "Factual Investigator",
-    "sameAs": ["https://www.linkedin.com/in/david-o-357848109/"]
+    "jobTitle": "Factual Investigator"
   }
 }
 </script>
@@ -94,22 +93,6 @@
     font-size: 0.85rem; color: var(--ink-soft);
     text-transform: uppercase; letter-spacing: 0.08em;
   }
-  .services { list-style: none; padding: 0; }
-  .services li {
-    padding: 1.25rem 0; border-bottom: 1px solid var(--rule);
-    display: grid; grid-template-columns: auto 1fr;
-    gap: 1.25rem; align-items: baseline;
-  }
-  .services li:last-child { border-bottom: none; }
-  .service-num {
-    font-family: 'Fraunces', serif; font-size: 0.9rem;
-    color: var(--accent); font-feature-settings: "tnum"; min-width: 1.5rem;
-  }
-  .service-content h3 {
-    font-family: 'Inter', sans-serif; font-size: 1rem;
-    font-weight: 600; color: var(--ink); margin-bottom: 0.35rem;
-  }
-  .service-content p { margin-bottom: 0; font-size: 0.95rem; }
   .coverage-box { background: var(--accent-soft); padding: 1.5rem 1.75rem; border-radius: 4px; }
   .coverage-box p { margin-bottom: 0; color: var(--ink); }
   .coverage-box strong { color: var(--accent); }
@@ -183,11 +166,6 @@
     color: var(--ink); font-weight: 500;
     word-break: break-word;
   }
-  .contact-value a {
-    color: var(--accent); text-decoration: none;
-    border-bottom: 1px solid transparent; transition: border-color 0.2s;
-  }
-  .contact-value a:hover { border-bottom-color: var(--accent); }
 
   /* Enquiry form */
   .enquiry-form {
@@ -260,6 +238,7 @@
   }
   .submit-btn:hover { background: #2a4a73; }
   .submit-btn:active { transform: translateY(1px); }
+
   footer {
     margin-top: 4rem; padding-top: 1.5rem;
     border-top: 1px solid var(--rule);
@@ -324,40 +303,6 @@
   </section>
 
   <section>
-    <h2>Services</h2>
-    <ul class="services">
-      <li>
-        <div class="service-num">01</div>
-        <div class="service-content">
-          <h3>Factual Investigations</h3>
-          <p>Independent enquiry into the circumstances of an insurance claim, including identification of relevant parties, gathering of evidence, and verification of factual matters in dispute.</p>
-        </div>
-      </li>
-      <li>
-        <div class="service-num">02</div>
-        <div class="service-content">
-          <h3>Claimant & Witness Interviews</h3>
-          <p>Structured, recorded interviews with claimants, witnesses, and other relevant parties, conducted in person or remotely, with formal statements prepared as required.</p>
-        </div>
-      </li>
-      <li>
-        <div class="service-num">03</div>
-        <div class="service-content">
-          <h3>Factual Reports</h3>
-          <p>Clear, well-organised written reports presenting findings in a format that supports informed claims decisions and is suitable for further use by the insurer.</p>
-        </div>
-      </li>
-      <li>
-        <div class="service-num">04</div>
-        <div class="service-content">
-          <h3>Background & Locate Enquiries</h3>
-          <p>Discreet enquiries to locate parties, verify identifying information, and confirm details relevant to a claim, conducted within applicable privacy and regulatory frameworks.</p>
-        </div>
-      </li>
-    </ul>
-  </section>
-
-  <section>
     <h2>Coverage</h2>
     <div class="coverage-box">
       <p>Services are offered throughout <strong>New South Wales</strong> and the <strong>Australian Capital Territory</strong>, covering metropolitan, regional, and rural matters.</p>
@@ -375,10 +320,6 @@
         <div class="contact-label">Mobile</div>
         <div class="contact-value">0433 521 642</div>
       </div>
-      <div class="contact-row">
-        <div class="contact-label">LinkedIn</div>
-        <div class="contact-value"><a href="https://www.linkedin.com/in/david-o-357848109/" target="_blank" rel="noopener">linkedin.com/in/david-o-357848109</a></div>
-      </div>
     </div>
   </section>
 
@@ -386,7 +327,7 @@
     <h2>Send an Enquiry</h2>
     <form class="enquiry-form" action="https://api.web3forms.com/submit" method="POST">
 
-      <!-- Web3Forms access key (replace with your own from web3forms.com) -->
+      <!-- Web3Forms access key -->
       <input type="hidden" name="access_key" value="87ab3896-82d5-435d-99f5-3de9764bd91c">
 
       <!-- Customise email subject and the "from" name -->
